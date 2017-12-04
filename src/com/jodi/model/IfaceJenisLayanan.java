@@ -9,7 +9,7 @@ package com.jodi.model;
  *
  * @author Acer
  */
-public interface IfaceJasaLayanan {
+public interface IfaceJenisLayanan {
     
     public String printJenisLayananReguler();
     public String printJenisLayananKilat();

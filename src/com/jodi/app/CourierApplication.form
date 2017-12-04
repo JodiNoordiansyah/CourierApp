@@ -41,37 +41,61 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jPanel3" max="32767" attributes="0"/>
                   <Component id="jPanel5" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jPanel1" max="32767" attributes="0"/>
-                  <Component id="panel" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Component id="panel" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                              <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
+                      <Component id="labelGitHUB" min="-2" pref="426" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="panel" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                       <Component id="jPanel5" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                              <Component id="jLabel30" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
+                              <Component id="panel" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jPanel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="labelGitHUB" min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -102,7 +126,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="comboPengirim" min="-2" pref="116" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <EmptySpace pref="29" max="32767" attributes="0"/>
                                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="textKodePosPengirim" min="-2" pref="73" max="-2" attributes="0"/>
@@ -111,20 +135,16 @@
                               <Component id="jScrollPane1" max="32767" attributes="0"/>
                           </Group>
                       </Group>
+                      <Component id="buttonSubmitPengirim" alignment="1" min="-2" max="-2" attributes="0"/>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="textProvinsiPengirim" min="-2" pref="289" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="textTeleponPengirim" min="-2" pref="288" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="buttonSubmitPengirim" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="textTeleponPengirim" max="32767" attributes="0"/>
+                              <Component id="textProvinsiPengirim" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -172,12 +192,12 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nama :"/>
+            <Property name="text" type="java.lang.String" value="Nama       :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Alamat :"/>
+            <Property name="text" type="java.lang.String" value="Alamat     :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="textNamaPengirim">
@@ -199,7 +219,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Kota :"/>
+            <Property name="text" type="java.lang.String" value="Kota       :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="comboPengirim">
@@ -225,14 +245,14 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Provinsi :"/>
+            <Property name="text" type="java.lang.String" value="Provinsi  :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="textProvinsiPengirim">
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Telepon :"/>
+            <Property name="text" type="java.lang.String" value="Telepon  :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="textTeleponPengirim">
@@ -348,12 +368,12 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nama :"/>
+            <Property name="text" type="java.lang.String" value="Nama     :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Alamat :"/>
+            <Property name="text" type="java.lang.String" value="Alamat   :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="textNamaPenerima">
@@ -382,7 +402,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Kota :"/>
+            <Property name="text" type="java.lang.String" value="Kota       :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="comboPenerima">
@@ -422,7 +442,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Telepon :"/>
+            <Property name="text" type="java.lang.String" value="Telepon  :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="textTeleponPenerima">
@@ -468,7 +488,7 @@
                                           <Component id="textTinggi" min="-2" pref="50" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="dateTanggalKirim" min="-2" pref="101" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -489,7 +509,7 @@
                           <Component id="textLebar" min="-2" pref="50" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel25" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="31" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -634,22 +654,22 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Nomor Paket :"/>
+            <Property name="text" type="java.lang.String" value="Nomor Paket    :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Kota Tujuan"/>
+            <Property name="text" type="java.lang.String" value="Kota Tujuan     :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel15">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Jenis Barang"/>
+            <Property name="text" type="java.lang.String" value="Jenis Barang   :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel16">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Berat Barang"/>
+            <Property name="text" type="java.lang.String" value="Berat Barang   :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="textNomorPaket">
@@ -693,7 +713,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel18">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Tanggal Kirim :"/>
+            <Property name="text" type="java.lang.String" value="Tanggal Kirim   :"/>
           </Properties>
         </Component>
         <Component class="com.toedter.calendar.JDateChooser" name="dateTanggalKirim">
@@ -756,12 +776,12 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel26">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Jenis Layanan"/>
+            <Property name="text" type="java.lang.String" value="Jenis Layanan :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel27">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Asuransi :"/>
+            <Property name="text" type="java.lang.String" value="Asuransi          :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="comboAsuransi">
@@ -783,7 +803,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel28">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Harga Barang"/>
+            <Property name="text" type="java.lang.String" value="Harga Barang  :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JFormattedTextField" name="textHargaBarang">
@@ -796,7 +816,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel29">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pembayaran"/>
+            <Property name="text" type="java.lang.String" value="Pembayaran    :"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="comboJenisPembayaran">
@@ -860,7 +880,7 @@
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-            <TitledBorder title="Rincian Harga"/>
+            <TitledBorder title="Rincian"/>
           </Border>
         </Property>
       </Properties>
@@ -869,107 +889,160 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="outputJenisLayanan" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="labelStrip" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="outputKotaTujuan" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="labelJenisLayanan" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="labelGitHub" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
+                      <Component id="labelPemisah2" alignment="0" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Component id="labelTarifLayanan" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="outputTarifLayanan" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="labelTotalHarga" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
-                                              <Component id="labelberat" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="outputBerat" min="-2" max="-2" attributes="0"/>
-                                              <Component id="outputTotalHarga" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
+                                      <Component id="outputLabelNomorTelpPenerima" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="outputLabelAlamatPenerima" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="labelHargaBarang" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="labelBiayaAsuransi" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="labelAsuransi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="outputAlamatPenerima" min="-2" max="-2" attributes="0"/>
+                                      <Component id="outputNomorTelpPenerima" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="labelTotalBiaya" min="-2" max="-2" attributes="0"/>
+                                  <Component id="outputJenisLayanan" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="labelStrip" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="outputKotaTujuan" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Component id="labelTarifLayanan" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="outputTarifLayanan" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="labelTotalHarga" alignment="0" min="-2" pref="76" max="-2" attributes="0"/>
+                                                      <Component id="labelberat" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="outputBerat" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="outputTotalHarga" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="labelHargaBarang" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelBiayaAsuransi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="labelAsuransi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="labelTotalBiaya" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="outputTotalBiayaYgHarusDiBayar" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="outputTotalBiayaYgHarusDiBayar" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="labelIsAsuransi" min="-2" max="-2" attributes="0"/>
+                                      <Component id="outputBiayaAsuransi" min="-2" max="-2" attributes="0"/>
+                                      <Component id="outputHargaBarang" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="labelJenisLayanan" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="outputlabelNamaPengirim" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="outputNamaPengirim" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="outputLabelNomorTelpPengirim" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="outputNomorTelpPengirim" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Component id="labelPemisah1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Component id="outputLabelNamaPenerima" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="outputNamaPenerima" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="labelIsAsuransi" min="-2" max="-2" attributes="0"/>
-                              <Component id="outputBiayaAsuransi" min="-2" max="-2" attributes="0"/>
-                              <Component id="outputHargaBarang" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <EmptySpace pref="64" max="32767" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="labelJenisLayanan" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="labelGitHub" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="outputlabelNamaPengirim" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="outputNamaPengirim" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="outputLabelNomorTelpPengirim" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="outputNomorTelpPengirim" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="labelPemisah1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="outputLabelNamaPenerima" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="outputNamaPenerima" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="outputLabelNomorTelpPenerima" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="outputNomorTelpPenerima" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="outputLabelAlamatPenerima" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="outputAlamatPenerima" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="labelPemisah2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
+                  <Component id="labelJenisLayanan" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="outputJenisLayanan" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="labelStrip" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="outputKotaTujuan" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="labelTarifLayanan" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="outputTarifLayanan" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="labelAsuransi" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="labelIsAsuransi" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="labelberat" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="outputBerat" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="labelHargaBarang" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="outputHargaBarang" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="labelTotalHarga" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="outputTotalHarga" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="labelBiayaAsuransi" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="outputBiayaAsuransi" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="labelTotalBiaya" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="outputTotalBiayaYgHarusDiBayar" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="18" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1078,12 +1151,82 @@
             <Property name="text" type="java.lang.String" value="Kota Tujuan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="labelGitHub">
+        <Component class="javax.swing.JLabel" name="outputlabelNamaPengirim">
           <Properties>
-            <Property name="text" type="java.lang.String" value="https://github.com/JodiNoordiansyah/CourierApp.git"/>
+            <Property name="text" type="java.lang.String" value="Nama Pengirim  :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputNamaPengirim">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="nama"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputLabelNomorTelpPengirim">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nomor Telepon :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputNomorTelpPengirim">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="nomorTelp"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelPemisah1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="-------------------------------------------------------------------------------------"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputLabelNamaPenerima">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nama Penerima :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputNamaPenerima">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="nama"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputLabelNomorTelpPenerima">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Nomor Telepon  :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputNomorTelpPenerima">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="nomorTelp"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelPemisah2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="-------------------------------------------------------------------------------------"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputLabelAlamatPenerima">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Alamat               :"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="outputAlamatPenerima">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="alamat"/>
           </Properties>
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="labelGitHUB">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="https://github.com/JodiNoordiansyah/CourierApp.git"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel30">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/com/jodi/image/DeliveryPict.png"/>
+        </Property>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>

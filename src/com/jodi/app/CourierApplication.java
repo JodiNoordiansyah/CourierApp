@@ -26,6 +26,8 @@ public class CourierApplication extends javax.swing.JFrame {
     Tarif[] kota;
     NumberFormat numberFormat = NumberFormat.getInstance();
     DataPengirimanPaket pp = new DataPengirimanPaket();
+    DataPengirim dataPengirim = new DataPengirim();
+    DataPenerima dataPenerima = new DataPenerima();
 
     /**
      * Creates new form CourierApplication
@@ -53,7 +55,7 @@ public class CourierApplication extends javax.swing.JFrame {
         for (int i = 0; i < size; i++) {
             Tarif tarif = kotaTujuan.get(i);
             kota[i] = tarif;
-            //System.out.println("");
+            System.out.println("");
         }
 
         return kota;
@@ -78,7 +80,19 @@ public class CourierApplication extends javax.swing.JFrame {
         outputJenisLayanan.setVisible(false);
         outputKotaTujuan.setVisible(false);
         labelStrip.setVisible(false);
-        labelGitHub.setVisible(false);
+        //labelGitHUB.setVisible(false);
+        outputNamaPenerima.setVisible(false);
+        outputNamaPengirim.setVisible(false);
+        outputNomorTelpPenerima.setVisible(false);
+        outputNomorTelpPengirim.setVisible(false);
+        labelPemisah1.setVisible(false);
+        labelPemisah2.setVisible(false);
+        outputLabelNamaPenerima.setVisible(false);
+        outputLabelNomorTelpPenerima.setVisible(false);
+        outputlabelNamaPengirim.setVisible(false);
+        outputLabelNomorTelpPengirim.setVisible(false);
+        outputLabelAlamatPenerima.setVisible(false);
+        outputAlamatPenerima.setVisible(false);
     }
 
     public void VisibleOutputTrue() {
@@ -100,7 +114,19 @@ public class CourierApplication extends javax.swing.JFrame {
         outputJenisLayanan.setVisible(true);
         outputKotaTujuan.setVisible(true);
         labelStrip.setVisible(true);
-        labelGitHub.setVisible(true);
+        //labelGitHUB.setVisible(true);
+        outputNamaPenerima.setVisible(true);
+        outputNamaPengirim.setVisible(true);
+        outputNomorTelpPenerima.setVisible(true);
+        outputNomorTelpPengirim.setVisible(true);
+        labelPemisah1.setVisible(true);
+        labelPemisah2.setVisible(true);
+        outputLabelNamaPenerima.setVisible(true);
+        outputLabelNomorTelpPenerima.setVisible(true);
+        outputlabelNamaPengirim.setVisible(true);
+        outputLabelNomorTelpPengirim.setVisible(true);
+        outputLabelAlamatPenerima.setVisible(true);
+        outputAlamatPenerima.setVisible(true);
     }
 
     public void VisiblePengirimTrue() {
@@ -303,7 +329,20 @@ public class CourierApplication extends javax.swing.JFrame {
         outputBiayaAsuransi = new javax.swing.JLabel();
         labelStrip = new javax.swing.JLabel();
         outputKotaTujuan = new javax.swing.JLabel();
-        labelGitHub = new javax.swing.JLabel();
+        outputlabelNamaPengirim = new javax.swing.JLabel();
+        outputNamaPengirim = new javax.swing.JLabel();
+        outputLabelNomorTelpPengirim = new javax.swing.JLabel();
+        outputNomorTelpPengirim = new javax.swing.JLabel();
+        labelPemisah1 = new javax.swing.JLabel();
+        outputLabelNamaPenerima = new javax.swing.JLabel();
+        outputNamaPenerima = new javax.swing.JLabel();
+        outputLabelNomorTelpPenerima = new javax.swing.JLabel();
+        outputNomorTelpPenerima = new javax.swing.JLabel();
+        labelPemisah2 = new javax.swing.JLabel();
+        outputLabelAlamatPenerima = new javax.swing.JLabel();
+        outputAlamatPenerima = new javax.swing.JLabel();
+        labelGitHUB = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -312,15 +351,15 @@ public class CourierApplication extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Data Pengirim"));
 
-        jLabel1.setText("Nama :");
+        jLabel1.setText("Nama       :");
 
-        jLabel2.setText("Alamat :");
+        jLabel2.setText("Alamat     :");
 
         textAlamatPengirim.setColumns(20);
         textAlamatPengirim.setRows(5);
         jScrollPane1.setViewportView(textAlamatPengirim);
 
-        jLabel3.setText("Kota :");
+        jLabel3.setText("Kota       :");
 
         comboPengirim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -330,9 +369,9 @@ public class CourierApplication extends javax.swing.JFrame {
 
         jLabel4.setText("Kode Pos:");
 
-        jLabel5.setText("Provinsi :");
+        jLabel5.setText("Provinsi  :");
 
-        jLabel6.setText("Telepon :");
+        jLabel6.setText("Telepon  :");
 
         buttonSubmitPengirim.setText("Submit");
         buttonSubmitPengirim.addActionListener(new java.awt.event.ActionListener() {
@@ -357,24 +396,21 @@ public class CourierApplication extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(comboPengirim, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(textKodePosPengirim, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(textNamaPengirim)
                             .addComponent(jScrollPane1)))
+                    .addComponent(buttonSubmitPengirim, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(18, 18, 18)
-                                .addComponent(textProvinsiPengirim, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addGap(18, 18, 18)
-                                .addComponent(textTeleponPengirim, javax.swing.GroupLayout.PREFERRED_SIZE, 288, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(buttonSubmitPengirim, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel6))
+                        .addGap(26, 26, 26)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(textTeleponPengirim)
+                            .addComponent(textProvinsiPengirim))))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -410,9 +446,9 @@ public class CourierApplication extends javax.swing.JFrame {
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Data Penerima"));
         jPanel5.setToolTipText("");
 
-        jLabel7.setText("Nama :");
+        jLabel7.setText("Nama     :");
 
-        jLabel8.setText("Alamat :");
+        jLabel8.setText("Alamat   :");
 
         textNamaPenerima.setEnabled(false);
         textNamaPenerima.addActionListener(new java.awt.event.ActionListener() {
@@ -426,7 +462,7 @@ public class CourierApplication extends javax.swing.JFrame {
         textAlamatPenerima.setEnabled(false);
         jScrollPane2.setViewportView(textAlamatPenerima);
 
-        jLabel9.setText("Kota :");
+        jLabel9.setText("Kota       :");
 
         comboPenerima.setEnabled(false);
         comboPenerima.addActionListener(new java.awt.event.ActionListener() {
@@ -443,7 +479,7 @@ public class CourierApplication extends javax.swing.JFrame {
 
         textProvinsiPenerima.setEnabled(false);
 
-        jLabel12.setText("Telepon :");
+        jLabel12.setText("Telepon  :");
 
         textTeleponPenerima.setEnabled(false);
 
@@ -526,13 +562,13 @@ public class CourierApplication extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Data Pengiriman Paket"));
 
-        jLabel13.setText("Nomor Paket :");
+        jLabel13.setText("Nomor Paket    :");
 
-        jLabel14.setText("Kota Tujuan");
+        jLabel14.setText("Kota Tujuan     :");
 
-        jLabel15.setText("Jenis Barang");
+        jLabel15.setText("Jenis Barang   :");
 
-        jLabel16.setText("Berat Barang");
+        jLabel16.setText("Berat Barang   :");
 
         textNomorPaket.setEnabled(false);
 
@@ -551,7 +587,7 @@ public class CourierApplication extends javax.swing.JFrame {
 
         jLabel17.setText("kg");
 
-        jLabel18.setText("Tanggal Kirim :");
+        jLabel18.setText("Tanggal Kirim   :");
 
         dateTanggalKirim.setEnabled(false);
 
@@ -578,9 +614,9 @@ public class CourierApplication extends javax.swing.JFrame {
 
         jLabel25.setText("cm");
 
-        jLabel26.setText("Jenis Layanan");
+        jLabel26.setText("Jenis Layanan :");
 
-        jLabel27.setText("Asuransi :");
+        jLabel27.setText("Asuransi          :");
 
         comboAsuransi.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tidak", "Ya" }));
         comboAsuransi.setEnabled(false);
@@ -590,11 +626,11 @@ public class CourierApplication extends javax.swing.JFrame {
             }
         });
 
-        jLabel28.setText("Harga Barang");
+        jLabel28.setText("Harga Barang  :");
 
         textHargaBarang.setEnabled(false);
 
-        jLabel29.setText("Pembayaran");
+        jLabel29.setText("Pembayaran    :");
 
         comboJenisPembayaran.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Debit" }));
         comboJenisPembayaran.setEnabled(false);
@@ -646,7 +682,7 @@ public class CourierApplication extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(textTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(dateTanggalKirim, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel20)
@@ -662,7 +698,7 @@ public class CourierApplication extends javax.swing.JFrame {
                         .addComponent(textLebar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel25)
-                        .addGap(0, 31, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel13)
@@ -771,7 +807,7 @@ public class CourierApplication extends javax.swing.JFrame {
                         .addContainerGap())))
         );
 
-        panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Rincian Harga"));
+        panel.setBorder(javax.swing.BorderFactory.createTitledBorder("Rincian"));
 
         labelTarifLayanan.setText("Tarif Layanan  :");
 
@@ -814,7 +850,29 @@ public class CourierApplication extends javax.swing.JFrame {
         outputKotaTujuan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         outputKotaTujuan.setText("Kota Tujuan");
 
-        labelGitHub.setText("https://github.com/JodiNoordiansyah/CourierApp.git");
+        outputlabelNamaPengirim.setText("Nama Pengirim  :");
+
+        outputNamaPengirim.setText("nama");
+
+        outputLabelNomorTelpPengirim.setText("Nomor Telepon :");
+
+        outputNomorTelpPengirim.setText("nomorTelp");
+
+        labelPemisah1.setText("-------------------------------------------------------------------------------------");
+
+        outputLabelNamaPenerima.setText("Nama Penerima :");
+
+        outputNamaPenerima.setText("nama");
+
+        outputLabelNomorTelpPenerima.setText("Nomor Telepon  :");
+
+        outputNomorTelpPenerima.setText("nomorTelp");
+
+        labelPemisah2.setText("-------------------------------------------------------------------------------------");
+
+        outputLabelAlamatPenerima.setText("Alamat               :");
+
+        outputAlamatPenerima.setText("alamat");
 
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
@@ -823,55 +881,98 @@ public class CourierApplication extends javax.swing.JFrame {
             .addGroup(panelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addComponent(outputJenisLayanan)
-                        .addGap(18, 18, 18)
-                        .addComponent(labelStrip)
-                        .addGap(18, 18, 18)
-                        .addComponent(outputKotaTujuan))
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addComponent(labelJenisLayanan)
-                        .addGap(18, 18, 18)
-                        .addComponent(labelGitHub))
+                    .addComponent(labelPemisah2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(panelLayout.createSequentialGroup()
                         .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelLayout.createSequentialGroup()
                                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(panelLayout.createSequentialGroup()
-                                        .addComponent(labelTarifLayanan)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(outputTarifLayanan))
-                                    .addGroup(panelLayout.createSequentialGroup()
-                                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(labelTotalHarga, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(labelberat))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(outputBerat)
-                                            .addComponent(outputTotalHarga))))
-                                .addGap(19, 19, 19)
-                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(labelHargaBarang)
-                                    .addComponent(labelBiayaAsuransi)
-                                    .addComponent(labelAsuransi)))
-                            .addGroup(panelLayout.createSequentialGroup()
-                                .addComponent(labelTotalBiaya)
+                                    .addComponent(outputLabelNomorTelpPenerima)
+                                    .addComponent(outputLabelAlamatPenerima))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(outputTotalBiayaYgHarusDiBayar)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(labelIsAsuransi)
-                            .addComponent(outputBiayaAsuransi)
-                            .addComponent(outputHargaBarang))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(outputAlamatPenerima)
+                                    .addComponent(outputNomorTelpPenerima)))
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(outputJenisLayanan)
+                                .addGap(18, 18, 18)
+                                .addComponent(labelStrip)
+                                .addGap(18, 18, 18)
+                                .addComponent(outputKotaTujuan))
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(panelLayout.createSequentialGroup()
+                                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(panelLayout.createSequentialGroup()
+                                                .addComponent(labelTarifLayanan)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(outputTarifLayanan))
+                                            .addGroup(panelLayout.createSequentialGroup()
+                                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(labelTotalHarga, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(labelberat))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(outputBerat)
+                                                    .addComponent(outputTotalHarga))))
+                                        .addGap(19, 19, 19)
+                                        .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(labelHargaBarang)
+                                            .addComponent(labelBiayaAsuransi)
+                                            .addComponent(labelAsuransi)))
+                                    .addGroup(panelLayout.createSequentialGroup()
+                                        .addComponent(labelTotalBiaya)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(outputTotalBiayaYgHarusDiBayar)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(labelIsAsuransi)
+                                    .addComponent(outputBiayaAsuransi)
+                                    .addComponent(outputHargaBarang)))
+                            .addComponent(labelJenisLayanan)
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(outputlabelNamaPengirim)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(outputNamaPengirim))
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(outputLabelNomorTelpPengirim)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(outputNomorTelpPengirim))
+                            .addComponent(labelPemisah1)
+                            .addGroup(panelLayout.createSequentialGroup()
+                                .addComponent(outputLabelNamaPenerima)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(outputNamaPenerima)))
+                        .addContainerGap(64, Short.MAX_VALUE))))
         );
         panelLayout.setVerticalGroup(
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(labelJenisLayanan)
-                    .addComponent(labelGitHub))
+                    .addComponent(outputlabelNamaPengirim)
+                    .addComponent(outputNamaPengirim))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(outputLabelNomorTelpPengirim)
+                    .addComponent(outputNomorTelpPengirim))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelPemisah1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(outputLabelNamaPenerima)
+                    .addComponent(outputNamaPenerima))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(outputLabelNomorTelpPenerima)
+                    .addComponent(outputNomorTelpPenerima))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(outputLabelAlamatPenerima)
+                    .addComponent(outputAlamatPenerima))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelPemisah2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelJenisLayanan)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(outputJenisLayanan)
@@ -898,9 +999,13 @@ public class CourierApplication extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelTotalBiaya)
-                    .addComponent(outputTotalBiayaYgHarusDiBayar))
-                .addContainerGap(18, Short.MAX_VALUE))
+                    .addComponent(outputTotalBiayaYgHarusDiBayar)))
         );
+
+        labelGitHUB.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        labelGitHUB.setText("https://github.com/JodiNoordiansyah/CourierApp.git");
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/jodi/image/DeliveryPict.png"))); // NOI18N
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -919,10 +1024,21 @@ public class CourierApplication extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(58, 58, 58)
+                                .addComponent(jLabel30)
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(173, 173, 173)
+                        .addComponent(labelGitHUB, javax.swing.GroupLayout.PREFERRED_SIZE, 426, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -931,14 +1047,20 @@ public class CourierApplication extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(jLabel30)
+                                .addGap(18, 18, 18)
+                                .addComponent(panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(40, 40, 40)
+                        .addComponent(labelGitHUB, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(47, 47, 47))))
         );
 
         pack();
@@ -964,7 +1086,7 @@ public class CourierApplication extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         Tarif tarif = (Tarif) comboPenerima.getSelectedItem();
-        Paket cal = new Paket();
+        Paket paket = new Paket();
 
         pp.setTanggal(dateTanggalKirim.getDate());
         pp.setNomorPaket(textNomorPaket.getText());
@@ -975,9 +1097,14 @@ public class CourierApplication extends javax.swing.JFrame {
 
         try {
             DecimalFormat df = new DecimalFormat("###,###.00");
-            cal.setTarif(tarif);
-            cal.setBerat(Integer.parseInt(textBerat.getText()));
-            pp.setBerat(cal.getBerat());
+            paket.setTarif(tarif);
+            paket.setBerat(Integer.parseInt(textBerat.getText()));
+            pp.setBerat(paket.getBerat());
+            outputNamaPengirim.setText(dataPengirim.getNama());
+            outputNomorTelpPengirim.setText(dataPengirim.getTelepon());
+            outputNamaPenerima.setText(dataPenerima.getNama());
+            outputNomorTelpPenerima.setText(dataPenerima.getTelepon());
+            outputAlamatPenerima.setText(dataPenerima.getAlamat());
             outputBerat.setText(textBerat.getText() + " kg");
             outputKotaTujuan.setText(tarif.getKotaTujuan());
             if (comboJenisLayanan.getSelectedItem() == "Reguler") {
@@ -985,85 +1112,85 @@ public class CourierApplication extends javax.swing.JFrame {
                 if (comboAsuransi.getSelectedItem() == "Tidak") {
                     outputJenisLayanan.setText("Reguler");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getReguler()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaReguler()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaReguler()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaReguler()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaReguler()));
                 } else {
                     tarif.setHargaBarang(Double.parseDouble(textHargaBarang.getText().replaceAll(",", "")));
                     outputJenisLayanan.setText("Reguler");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getReguler()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaReguler()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaReguler()));
                     labelIsAsuransi.setText("Ya");
                     outputHargaBarang.setText("Rp. " + df.format(tarif.getHargaBarang()));
-                    outputBiayaAsuransi.setText("Rp. " + df.format(cal.hitungAsuransi()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaRegulerWithAsuransi()));
+                    outputBiayaAsuransi.setText("Rp. " + df.format(paket.hitungAsuransi()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaRegulerWithAsuransi()));
                 }
             } else if (comboJenisLayanan.getSelectedItem() == "Kilat") {
                 pp.setJenisLayanan("Kilat");
                 if (comboAsuransi.getSelectedItem() == "Tidak") {
                     outputJenisLayanan.setText("Kilat");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getKilat()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaKilat()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaKilat()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaKilat()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaKilat()));
                 } else {
                     tarif.setHargaBarang(Double.parseDouble(textHargaBarang.getText().replaceAll(",", "")));
                     outputJenisLayanan.setText("Kilat");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getKilat()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaKilat()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaKilat()));
                     labelIsAsuransi.setText("Ya");
                     outputHargaBarang.setText("Rp. " + df.format(tarif.getHargaBarang()));
-                    outputBiayaAsuransi.setText("Rp. " + df.format(cal.hitungAsuransi()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaKilatWithAsuransi()));
+                    outputBiayaAsuransi.setText("Rp. " + df.format(paket.hitungAsuransi()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaKilatWithAsuransi()));
                 }
             } else if (comboJenisLayanan.getSelectedItem() == "SDS") {
                 pp.setJenisLayanan("SDS");
                 if (comboAsuransi.getSelectedItem() == "Tidak") {
                     outputJenisLayanan.setText("SDS");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getSds()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaSDS()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaSDS()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaSDS()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaSDS()));
                 } else {
                     tarif.setHargaBarang(Double.parseDouble(textHargaBarang.getText().replaceAll(",", "")));
                     outputJenisLayanan.setText("SDS");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getSds()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaSDS()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaSDS()));
                     labelIsAsuransi.setText("Ya");
                     outputHargaBarang.setText("Rp. " + df.format(tarif.getHargaBarang()));
-                    outputBiayaAsuransi.setText("Rp. " + df.format(cal.hitungAsuransi()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaSDSWithAsuransi()));
+                    outputBiayaAsuransi.setText("Rp. " + df.format(paket.hitungAsuransi()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaSDSWithAsuransi()));
                 }
             } else if (comboJenisLayanan.getSelectedItem() == "ONS") {
                 pp.setJenisLayanan("ONS");
                 if (comboAsuransi.getSelectedItem() == "Tidak") {
                     outputJenisLayanan.setText("ONS");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getOns()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaONS()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaONS()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaONS()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaONS()));
                 } else {
                     tarif.setHargaBarang(Double.parseDouble(textHargaBarang.getText().replaceAll(",", "")));
                     outputJenisLayanan.setText("ONS");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getOns()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaONS()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaONS()));
                     labelIsAsuransi.setText("Ya");
                     outputHargaBarang.setText("Rp. " + df.format(tarif.getHargaBarang()));
-                    outputBiayaAsuransi.setText("Rp. " + df.format(cal.hitungAsuransi()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaONSWithAsuransi()));
+                    outputBiayaAsuransi.setText("Rp. " + df.format(paket.hitungAsuransi()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaONSWithAsuransi()));
                 }
             } else if (comboJenisLayanan.getSelectedItem() == "HDS") {
                 pp.setJenisLayanan("HDS");
                 if (comboAsuransi.getSelectedItem() == "Tidak") {
                     outputJenisLayanan.setText("HDS");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getHds()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaHDS()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaHDS()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaHDS()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaHDS()));
                 } else {
                     tarif.setHargaBarang(Double.parseDouble(textHargaBarang.getText().replaceAll(",", "")));
                     outputJenisLayanan.setText("HDS");
                     outputTarifLayanan.setText("Rp. " + df.format(tarif.getHds()));
-                    outputTotalHarga.setText("Rp. " + df.format(cal.hitungBiayaHDS()));
+                    outputTotalHarga.setText("Rp. " + df.format(paket.hitungBiayaHDS()));
                     labelIsAsuransi.setText("Ya");
                     outputHargaBarang.setText("Rp. " + df.format(tarif.getHargaBarang()));
-                    outputBiayaAsuransi.setText("Rp. " + df.format(cal.hitungAsuransi()));
-                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(cal.hitungBiayaHDSWithAsuransi()));
+                    outputBiayaAsuransi.setText("Rp. " + df.format(paket.hitungAsuransi()));
+                    outputTotalBiayaYgHarusDiBayar.setText("Rp. " + df.format(paket.hitungBiayaHDSWithAsuransi()));
                 }
             }
             pp.setHargaBarang(tarif.getHargaBarang());
@@ -1091,7 +1218,7 @@ public class CourierApplication extends javax.swing.JFrame {
     private void buttonSubmitPengirimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubmitPengirimActionPerformed
         // TODO add your handling code here:
         Tarif tarif = (Tarif) comboPengirim.getSelectedItem();
-        DataPengirim dataPengirim = new DataPengirim();
+        //DataPengirim dataPengirim = new DataPengirim();
         dataPengirim.setNama(textNamaPengirim.getText());
         dataPengirim.setAlamat(textAlamatPengirim.getText());
         dataPengirim.setKota(tarif.getKotaTujuan());
@@ -1119,13 +1246,14 @@ public class CourierApplication extends javax.swing.JFrame {
     private void buttonSubmitPenerimaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSubmitPenerimaActionPerformed
         // TODO add your handling code here:
         Tarif tarif = (Tarif) comboPenerima.getSelectedItem();
-        DataPenerima dataPenerima = new DataPenerima();
+        //DataPenerima dataPenerima = new DataPenerima();
         dataPenerima.setNama(textNamaPenerima.getText());
         dataPenerima.setAlamat(textAlamatPenerima.getText());
         dataPenerima.setKota(tarif.getKotaTujuan());
         dataPenerima.setKodePos(textKodePosPenerima.getText());
         dataPenerima.setProvinsi(textProvinsiPenerima.getText());
         dataPenerima.setTelepon(textTeleponPenerima.getText());
+        
         if (textNamaPenerima.getText().equalsIgnoreCase("")) {
             JOptionPane.showMessageDialog(rootPane, "Field Nama Tidak Boleh Kosong");
         } else if (textAlamatPenerima.getText().equalsIgnoreCase("")) {
@@ -1246,6 +1374,7 @@ public class CourierApplication extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1262,23 +1391,35 @@ public class CourierApplication extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel labelAsuransi;
     private javax.swing.JLabel labelBiayaAsuransi;
-    private javax.swing.JLabel labelGitHub;
+    private javax.swing.JLabel labelGitHUB;
     private javax.swing.JLabel labelHargaBarang;
     private javax.swing.JLabel labelIsAsuransi;
     private javax.swing.JLabel labelJenisLayanan;
+    private javax.swing.JLabel labelPemisah1;
+    private javax.swing.JLabel labelPemisah2;
     private javax.swing.JLabel labelStrip;
     private javax.swing.JLabel labelTarifLayanan;
     private javax.swing.JLabel labelTotalBiaya;
     private javax.swing.JLabel labelTotalHarga;
     private javax.swing.JLabel labelberat;
+    private javax.swing.JLabel outputAlamatPenerima;
     private javax.swing.JLabel outputBerat;
     private javax.swing.JLabel outputBiayaAsuransi;
     private javax.swing.JLabel outputHargaBarang;
     private javax.swing.JLabel outputJenisLayanan;
     private javax.swing.JLabel outputKotaTujuan;
+    private javax.swing.JLabel outputLabelAlamatPenerima;
+    private javax.swing.JLabel outputLabelNamaPenerima;
+    private javax.swing.JLabel outputLabelNomorTelpPenerima;
+    private javax.swing.JLabel outputLabelNomorTelpPengirim;
+    private javax.swing.JLabel outputNamaPenerima;
+    private javax.swing.JLabel outputNamaPengirim;
+    private javax.swing.JLabel outputNomorTelpPenerima;
+    private javax.swing.JLabel outputNomorTelpPengirim;
     private javax.swing.JLabel outputTarifLayanan;
     private javax.swing.JLabel outputTotalBiayaYgHarusDiBayar;
     private javax.swing.JLabel outputTotalHarga;
+    private javax.swing.JLabel outputlabelNamaPengirim;
     private javax.swing.JPanel panel;
     private javax.swing.JTextArea textAlamatPenerima;
     private javax.swing.JTextArea textAlamatPengirim;
