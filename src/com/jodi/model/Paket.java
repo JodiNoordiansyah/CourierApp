@@ -9,17 +9,17 @@ package com.jodi.model;
  *
  * @author user
  */
-public class Calculate {
+public class Paket {
 
     private int berat;
     private Tarif tarif;
     private final double asuransi = 0.03;
     private boolean isAsuransi;
 
-    public Calculate() {
+    public Paket() {
     }
 
-    public Calculate(int berat, Tarif tarif, boolean isAsuransi) {
+    public Paket(int berat, Tarif tarif, boolean isAsuransi) {
         this.berat = berat;
         this.tarif = tarif;
         this.isAsuransi = isAsuransi;

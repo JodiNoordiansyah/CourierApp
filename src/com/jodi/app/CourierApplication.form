@@ -390,6 +390,7 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="0"/>
             </Property>
+            <Property name="enabled" type="boolean" value="false"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="comboPenerimaActionPerformed"/>
@@ -877,7 +878,11 @@
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="outputKotaTujuan" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="labelJenisLayanan" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="labelJenisLayanan" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labelGitHub" min="-2" max="-2" attributes="0"/>
+                      </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
@@ -928,7 +933,10 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="labelJenisLayanan" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="labelJenisLayanan" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="labelGitHub" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="outputJenisLayanan" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -1068,6 +1076,11 @@
               <Font name="Tahoma" size="18" style="0"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Kota Tujuan"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="labelGitHub">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="https://github.com/JodiNoordiansyah/CourierApp.git"/>
           </Properties>
         </Component>
       </SubComponents>

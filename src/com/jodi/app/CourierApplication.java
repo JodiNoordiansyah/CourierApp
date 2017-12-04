@@ -5,12 +5,12 @@
  */
 package com.jodi.app;
 
-import com.jodi.model.Calculate;
+import com.jodi.model.Paket;
 import com.jodi.model.DataPenerima;
 import com.jodi.model.DataPengirim;
 import com.jodi.model.DataPengirimanPaket;
 import com.jodi.model.Tarif;
-import com.jodi.model.TarifDAO;
+import com.jodi.model.TarifFileDAO;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.List;
@@ -41,7 +41,7 @@ public class CourierApplication extends javax.swing.JFrame {
     public void initPaket() {
 
         try {
-            kotaTujuan = TarifDAO.getTarif();
+            kotaTujuan = TarifFileDAO.getTarif();
         } catch (Exception e) {
         }
 
@@ -78,6 +78,7 @@ public class CourierApplication extends javax.swing.JFrame {
         outputJenisLayanan.setVisible(false);
         outputKotaTujuan.setVisible(false);
         labelStrip.setVisible(false);
+        labelGitHub.setVisible(false);
     }
 
     public void VisibleOutputTrue() {
@@ -99,6 +100,7 @@ public class CourierApplication extends javax.swing.JFrame {
         outputJenisLayanan.setVisible(true);
         outputKotaTujuan.setVisible(true);
         labelStrip.setVisible(true);
+        labelGitHub.setVisible(true);
     }
 
     public void VisiblePengirimTrue() {
@@ -301,6 +303,7 @@ public class CourierApplication extends javax.swing.JFrame {
         outputBiayaAsuransi = new javax.swing.JLabel();
         labelStrip = new javax.swing.JLabel();
         outputKotaTujuan = new javax.swing.JLabel();
+        labelGitHub = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -425,6 +428,7 @@ public class CourierApplication extends javax.swing.JFrame {
 
         jLabel9.setText("Kota :");
 
+        comboPenerima.setEnabled(false);
         comboPenerima.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboPenerimaActionPerformed(evt);
@@ -810,6 +814,8 @@ public class CourierApplication extends javax.swing.JFrame {
         outputKotaTujuan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         outputKotaTujuan.setText("Kota Tujuan");
 
+        labelGitHub.setText("https://github.com/JodiNoordiansyah/CourierApp.git");
+
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
         panel.setLayout(panelLayout);
         panelLayout.setHorizontalGroup(
@@ -823,7 +829,10 @@ public class CourierApplication extends javax.swing.JFrame {
                         .addComponent(labelStrip)
                         .addGap(18, 18, 18)
                         .addComponent(outputKotaTujuan))
-                    .addComponent(labelJenisLayanan)
+                    .addGroup(panelLayout.createSequentialGroup()
+                        .addComponent(labelJenisLayanan)
+                        .addGap(18, 18, 18)
+                        .addComponent(labelGitHub))
                     .addGroup(panelLayout.createSequentialGroup()
                         .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panelLayout.createSequentialGroup()
@@ -860,7 +869,9 @@ public class CourierApplication extends javax.swing.JFrame {
             panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(labelJenisLayanan)
+                .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelJenisLayanan)
+                    .addComponent(labelGitHub))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(outputJenisLayanan)
@@ -953,7 +964,7 @@ public class CourierApplication extends javax.swing.JFrame {
         // TODO add your handling code here:
 
         Tarif tarif = (Tarif) comboPenerima.getSelectedItem();
-        Calculate cal = new Calculate();
+        Paket cal = new Paket();
 
         pp.setTanggal(dateTanggalKirim.getDate());
         pp.setNomorPaket(textNomorPaket.getText());
@@ -1251,6 +1262,7 @@ public class CourierApplication extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel labelAsuransi;
     private javax.swing.JLabel labelBiayaAsuransi;
+    private javax.swing.JLabel labelGitHub;
     private javax.swing.JLabel labelHargaBarang;
     private javax.swing.JLabel labelIsAsuransi;
     private javax.swing.JLabel labelJenisLayanan;

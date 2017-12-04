@@ -16,14 +16,14 @@ import java.util.Scanner;
  *
  * @author user
  */
-public class TarifDAO {
+public class TarifFileDAO {
     
     
     public static  List<Tarif> getTarif() {
         List<Tarif> tarifList = new ArrayList<>();
         try {
             
-            Scanner scan = new Scanner(new File("C:/Users/Acer/Desktop/ASSIGNMENT/tarifDAO.txt"));
+            Scanner scan = new Scanner(new File("TarifDAO.txt"));
             while (scan.hasNextLine()) {
                 Tarif tarifs = new Tarif();
                 String line = scan.nextLine();
